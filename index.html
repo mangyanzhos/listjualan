@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Jualan Yanzxz Official</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #F2F7FF;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background: linear-gradient(135deg, #8A2BE2, #FFC0CB);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: slideInDown 1s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        /* Styling untuk hero section */
+.hero {
+    background: linear-gradient(135deg, #FFC0CB, #8A2BE2);
+    border-radius: 50px;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    color: #FFD700; /* Warna emas untuk teks */
+    font-family: 'Poppins', sans-serif; /* Font keren untuk tampilan modern */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+    font-size: 2.5em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #FFD700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #FFD700, #FF69B4);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #FF69B4, #FFD700);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5em;
+    }
+
+    .hero-subtitle {
+        font-size: 2em;
+    }
+}
+
+
+        .hero {
+            background: linear-gradient(135deg, #FFC0CB, #8A2BE2);
+            border-radius: 50px;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            margin: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            animation: slideInUp 1s ease-out;
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .info-section {
+            padding: 60px 20px;
+            background-color: #FFF;
+            border-radius: 30px;
+            margin: 40px 0;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .info-columns {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .info-column {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background-color: #F8F9FF;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .info-column:nth-child(1) { animation-delay: 0.2s; }
+        .info-column:nth-child(2) { animation-delay: 0.4s; }
+        .info-column:nth-child(3) { animation-delay: 0.6s; }
+        .info-column:nth-child(4) { animation-delay: 0.8s; }
+
+        .product-section {
+            padding: 60px 20px;
+            background-color: #FFF;
+            border-radius: 50px;
+            margin: 40px 0;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .product-card {
+            border: none;
+            border-radius: 25px;
+            background-color: #F8F9FF;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .product-card:nth-child(1) { animation-delay: 0.2s; }
+        .product-card:nth-child(2) { animation-delay: 0.4s; }
+        .product-card:nth-child(3) { animation-delay: 0.6s; }
+
+        .product-card img {
+            border-radius: 20px;
+            max-height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            color: #333;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+
+        .product-card p {
+            color: #777;
+            font-size: 1.1em;
+        }
+
+        .product-card .btn {
+            background: linear-gradient(135deg, #8A2BE2, #FF69B4);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .product-card .btn:hover {
+            background: linear-gradient(135deg, #FF69B4, #8A2BE2);
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #8A2BE2;
+            color: white;
+            padding: 30px 20px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            text-align: center;
+            animation: slideInUp 1s ease-out;
+        }
+        .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #8A2BE2; /* Warna background ungu */
+    color: white;
+    padding: 30px 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 15px;
+    font-size: 2em;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: #FFD700; /* Warna hover emas */
+    transform: scale(1.2); /* Efek membesar saat hover */
+}
+
+@media (max-width: 768px) {
+    .social-icon {
+        font-size: 1.5em; /* Ukuran lebih kecil untuk layar ponsel */
+    }
+}
+
+
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            .info-columns {
+                flex-direction: column;
+            }
+        }
+        .about-section {
+    background-color: #F8F9FF;
+    padding: 60px 20px;
+    margin: 50px 0;
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 2.8em;
+    color: #8A2BE2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+.about-content p::first-letter {
+    font-size: 2em;
+    color: #8A2BE2;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .about-content h2 {
+        font-size: 2.2em;
+    }
+
+    .about-content p {
+        font-size: 1.1em;
+    }
+}
+
+    </style>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // Durasi animasi dalam milidetik
+    easing: 'ease-in-out',  // Efek animasi
+    once: true  // Animasi hanya terjadi sekali
+  });
+</script>
+
+
+    <header>
+        <h1>Store Jualan Yanzxz Official</h1>
+    </header>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <!-- Kolom Explore Produk -->
+            <div class="col-md-6 text-center">
+                <h1 class="hero-title"> Selamat Datang di Store Jualan!</h1>
+                <a href="#products" class="cta-button">Lihat Produk</a>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="about-content text-center">
+            <h2>Tentang Kami</h2>
+        <div class="info-columns">
+            <div class="info-column">
+                <h3>Produk Berkualitas Tinggi</h3>
+                <p>Kami menawarkan layanan seperti VPS, server Pterodactyl, domain, dan layanan reseller yang semuanya dirancang untuk memberikan performa terbaik.</p>
+            </div>
+            <div class="info-column">
+                <h3>Metode Pembayaran Beragam</h3>
+                <p>Memudahkan transaksi Anda dengan berbagai metode pembayaran termasuk Gopay, Dana, Ovo, dan QR code.</p>
+            </div>
+            <div class="info-column">
+                <h3>Pelayanan Pelanggan Responsif</h3>
+                <p>Tim kami siap membantu Anda dengan pertanyaan atau masalah yang mungkin Anda hadapi, memastikan pengalaman belanja yang lancar dan memuaskan.</p>
+            </div>
+            <div class="info-column">
+                <h3>Harga Bersaing</h3>
+                <p>Kami berkomitmen untuk menawarkan produk dengan harga yang adil dan transparan, sehingga Anda mendapatkan nilai terbaik untuk setiap pembelian.</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="product-section" id="products">
+            <h3>Panel Pterodactyl Public</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 1GB</h3>
+                            <p>Harga: Rp 1.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 2GB</h3>
+                            <p>Harga: Rp 2.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 3GB</h3>
+                            <p>Harga: Rp 3.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                        <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 4GB</h3>
+                            <p>Harga: Rp 4.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 5GB</h3>
+                            <p>Harga: Rp 5.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 6GB</h3>
+                            <p>Harga: Rp 6.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 7GB</h3>
+                            <p>Harga: Rp 7.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 8GB</h3>
+                            <p>Harga: Rp 8.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk Unlimeted</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    <!-- Panel Pterodactyl Private sales products  -->
+                </div>
+            </div>
+        </section>
+                <section class="product-section" id="products">
+            <h3>Panel Pterodactyl Private</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 1GB</h3>
+                            <p>Harga: Rp 2.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 2GB</h3>
+                            <p>Harga: Rp 3.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 3GB</h3>
+                            <p>Harga: Rp 4.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 4GB</h3>
+                            <p>Harga: Rp 5.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 5GB</h3>
+                            <p>Harga: Rp 6.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 6GB</h3>
+                            <p>Harga: Rp 7.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk 8GB</h3>
+                            <p>Harga: Rp 9.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Disk Unlimeted</h3>
+                            <p>Harga: Rp 15.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                     <!-- Vps Digital Ocean sales products  -->
+                            <section class="product-section" id="products">
+            <h3>Vps Digital Ocean</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/R4hBf0P/images.png" alt="Product Image">
+                            <h3>Disk 1GB CORE1</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/R4hBf0P/images.png" alt="Product Image">
+                            <h3>Disk 2GB CORE1</h3>
+                            <p>Harga: Rp 14.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/R4hBf0P/images.png" alt="Product Image">
+                            <h3>Disk 4GB CORE2</h3>
+                            <p>Harga: Rp 30.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/R4hBf0P/images.png" alt="Product Image">
+                            <h3>Disk 8GB CORE4</h3>
+                            <p>Harga: Rp 40.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/R4hBf0P/images.png" alt="Product Image">
+                            <h3>Disk 16GB CORE4</h3>
+                            <p>Harga: Rp 52.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                      <!-- Script sales products  -->
+                              <section class="product-section" id="products">
+            <h3>All Script</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Panel Jasteb Murni</h3>
+                            <p>Harga: Rp 8.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Panel Jasteb Auto</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Pusat</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Bot Webp</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Webp</h3>
+                            <p>Harga: Rp 12.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Bot Pushkontak</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Bot Md</h3>
+                            <p>Harga: Rp 12.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Cpanel</h3>
+                            <p>Harga: Rp 8.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Bot Bug</h3>
+                            <p>Harga: Rp 20.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Ddos</h3>
+                            <p>Harga: Rp 40.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Bot Install Panel</h3>
+                            <p>Harga: Rp 4.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Userbot Tele</h3>
+                            <p>Harga: Rp 210.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Demon V1</h3>
+                            <p>Harga: Rp 40.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Demon V2</h3>
+                            <p>Harga: Rp 50.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/wYxxRGv/images-2.jpg" alt="Product Image">
+                            <h3>Script Demon V3</h3>
+                            <p>Harga: Rp 70.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                   
+                    </div>
+                    </div>
+                    </section>
+                          <!-- Jasa Iam sales products  -->
+                                  <section class="product-section" id="products">
+            <h3>All Jasa</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/6nFT95F/Servis-Elektronik-Jambi-831005418256195d7d3748415c62-50521591.png" alt="Product Image">
+                            <h3>Jasa Fix Script</h3>
+                            <p>Harga: Rp 11.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/6nFT95F/Servis-Elektronik-Jambi-831005418256195d7d3748415c62-50521591.png" alt="Product Image">
+                            <h3>Jasa Install Panel</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/6nFT95F/Servis-Elektronik-Jambi-831005418256195d7d3748415c62-50521591.png" alt="Product Image">
+                            <h3>Jasa Install Thema</h3>
+                            <p>Harga: Rp 12.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/6nFT95F/Servis-Elektronik-Jambi-831005418256195d7d3748415c62-50521591.png" alt="Product Image">
+                            <h3>Jasa Rename Script</h3>
+                            <p>Harga: Rp 12.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/6nFT95F/Servis-Elektronik-Jambi-831005418256195d7d3748415c62-50521591.png" alt="Product Image">
+                            <h3>Jasa Ddos Website</h3>
+                            <p>Harga: Rp 40.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/6nFT95F/Servis-Elektronik-Jambi-831005418256195d7d3748415c62-50521591.png" alt="Product Image">
+                            <h3>Jasa Pembuatan Fitur</h3>
+                            <p>Harga: Rp 50.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/6nFT95F/Servis-Elektronik-Jambi-831005418256195d7d3748415c62-50521591.png" alt="Product Image">
+                            <h3>Jasa Pembuatan Website</h3>
+                            <p>Harga: Rp 80.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/6nFT95F/Servis-Elektronik-Jambi-831005418256195d7d3748415c62-50521591.png" alt="Product Image">
+                            <h3>Jasa Pembuatan Script</h3>
+                            <p>Harga: Rp 91.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/6nFT95F/Servis-Elektronik-Jambi-831005418256195d7d3748415c62-50521591.png" alt="Product Image">
+                            <h3>Jasa Curi Codingan</h3>
+                            <p>Harga: Rp 40.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                                        <!-- server Pterodactyl Private sales products  -->
+                            <section class="product-section" id="products">
+            <h3>Server Pterodactyl</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Reseller Private</h3>
+                            <p>Harga: Rp 15.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Reseller Public</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Admin Panel Public</h3>
+                            <p>Harga: Rp 17.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Admin Panel Private</h3>
+                            <p>Harga: Rp 20.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Pt Panel Public</h3>
+                            <p>Harga: Rp 22.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Pt Panel Private</h3>
+                            <p>Harga: Rp 26.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Owner Panel Public</h3>
+                            <p>Harga: Rp 32.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Owner Panel Private</h3>
+                            <p>Harga: Rp 40.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Reseller Subdomain 1Bulan</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/JKPMwTg/images-1.jpg" alt="Product Image">
+                            <h3>Reseller Subdomain Perma</h3>
+                            <p>Harga: Rp 14.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                                        <!-- Nokos Wa sales products  -->
+                            <section class="product-section" id="products">
+            <h3>Nokos WhatsApp</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/dLjPSj2/download.jpg" alt="Product Image">
+                            <h3>Nomer Amerika</h3>
+                            <p>Harga: Rp 15.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/dLjPSj2/download.jpg" alt="Product Image">
+                            <h3>Nomer Rusia</h3>
+                            <p>Harga: Rp 20.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/dLjPSj2/download.jpg" alt="Product Image">
+                            <h3>Nomer Malaysia</h3>
+                            <p>Harga: Rp 30.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/dLjPSj2/download.jpg" alt="Product Image">
+                            <h3>Nomer Indonesia</h3>
+                            <p>Harga: Rp 8.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                                        <!-- Domain sales products  -->
+                                                <section class="product-section" id="products">
+            <h3>Domain Cloudfare</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/2Z3xq1n/images-1.png" alt="Product Image">
+                            <h3>Domain .com</h3>
+                            <p>Harga: Rp 150.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/2Z3xq1n/images-1.png" alt="Product Image">
+                            <h3>Domain .biz</h3>
+                            <p>Harga: Rp 90.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/2Z3xq1n/images-1.png" alt="Product Image">
+                            <h3>Domain .my.id</h3>
+                            <p>Harga: Rp 12.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/2Z3xq1n/images-1.png" alt="Product Image">
+                            <h3>Domain .info</h3>
+                            <p>Harga: Rp 80.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/2Z3xq1n/images-1.png" alt="Product Image">
+                            <h3>Domain .biz.id</h3>
+                            <p>Harga: Rp 15.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/2Z3xq1n/images-1.png" alt="Product Image">
+                            <h3>Domain .xyz</h3>
+                            <p>Harga: Rp 25.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/2Z3xq1n/images-1.png" alt="Product Image">
+                            <h3>Domain .tech</h3>
+                            <p>Harga: Rp 35.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/2Z3xq1n/images-1.png" alt="Product Image">
+                            <h3>Domain .name</h3>
+                            <p>Harga: Rp 60.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                                        <!-- Whm & Cpanel sales products  -->
+                                                <section class="product-section" id="products">
+            <h3>Whm & cPanel</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>cPanel Mini</h3>
+                            <p>Harga: Rp 5.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>cPanel Medium</h3>
+                            <p>Harga: Rp 9.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>cPanel Extra</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>cPanel Supper</h3>
+                            <p>Harga: Rp 12.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Whm Mini</h3>
+                            <p>Harga: Rp 14.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Whm Medium</h3>
+                            <p>Harga: Rp 18.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Whm Extra</h3>
+                            <p>Harga: Rp 20.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Whm Supper</h3>
+                            <p>Harga: Rp 23.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Mwhm Mini</h3>
+                            <p>Harga: Rp 24.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Mwhm Mediun</h3>
+                            <p>Harga: Rp 27.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Mwhm Extra</h3>
+                            <p>Harga: Rp 30.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Mwhm Supper</h3>
+                            <p>Harga: Rp 34.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Ceo</h3>
+                            <p>Harga: Rp 39.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Admin Host</h3>
+                            <p>Harga: Rp 43.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Wakil Founder</h3>
+                            <p>Harga: Rp 53.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/ysRLKsR/images-2.png" alt="Product Image">
+                            <h3>Akses Root</h3>
+                            <p>Harga: Rp 80.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                            </div>
+                    </div>
+                    </section>
+                                        <!-- jasteb Private sales products  -->
+                            <section class="product-section" id="products">
+            <h3>Jasteb Gacor</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>100 Result</h3>
+                            <p>Harga: Rp 8.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>150 Result</h3>
+                            <p>Harga: Rp 10.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>400 Result</h3>
+                            <p>Harga: Rp 15.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                                </div>
+                    </div>
+                    </section>
+                                        <!-- pt jasteb Private sales products  -->
+                            <section class="product-section" id="products">
+            <h3>Pt Jasteb Gacor</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>1 Email</h3>
+                            <p>Harga: Rp 5.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>2 Email</h3>
+                            <p>Harga: Rp 8.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>4 Email</h3>
+                            <p>Harga: Rp 12.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>5 Email</h3>
+                            <p>Harga: Rp 19.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                       
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>Unlimeted Email</h3>
+                            <p>Harga: Rp 25.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                                </div>
+                    </div>
+                    </section>
+                                        <!-- Panel jasteb Private sales products  -->
+                                                <section class="product-section" id="products">
+            <h3>Panel Jasteb Gacor</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>Max 5Email</h3>
+                            <p>Harga: Rp 20.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>Max 10Email</h3>
+                            <p>Harga: Rp 34.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>Max 20Email</h3>
+                            <p>Harga: Rp 45.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                            <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://i.ibb.co.com/854PGsY/images-3.jpg" alt="Product Image">
+                            <h3>Unlimeted Email</h3>
+                            <p>Harga: Rp 50.000</p>
+                            <button class="btn" onclick="contactWhatsApp()">Beli Sekarang</button>
+                        </div>
+                    </div>
+                                                                </div>
+                    </div>
+                    </section>
+                <section id="contact">
+<footer>
+    <p>&copy; 2024 Store Jualan Yanzxz Official</p>
+    <div class="social-icons">
+        <!-- Icon Telegram -->
+        <a href="https://t.me/cssdmin_ynz" target="_blank" class="social-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="50" height="50">
+        </a>
+        <!-- Icon YouTube -->
+        <a href="https://youtube.com/@yanzidhost" target="_blank" class="social-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="50" height="50">
+        </a>
+        <!-- Icon WhatsApp -->
+        <a href="https://wa.me/6283155792072" target="_blank" class="social-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50" height="50">
+        </a>
+    </div>
+</footer>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+function contactWhatsApp() {
+            const phoneNumber = '6283155792072'; // Ganti dengan nomor WhatsApp yang sebenarnya
+            const message = 'Halo, saya tertarik dengan produk Kamu!';
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+        </script>
+</body>
+</html>
